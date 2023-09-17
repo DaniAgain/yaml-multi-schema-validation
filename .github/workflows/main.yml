@@ -13,7 +13,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '14'
 
       - name: Install yaml-schema-validator
         run: |
@@ -21,16 +21,16 @@ jobs:
 
       - name: Validate Car YAML
         run: |
-          yaml-schema-validator validate -e -f car.yml -s schemas/schema_car.yml
+          $(npm bin)/yaml-schema-validator validate -e -f car.yml -s schemas/schema_car.yml
 
       - name: Validate Computer YAML
         run: |
-          yaml-schema-validator validate -e -f computer.yml -s schemas/schema_computer.yml
+          $(npm bin)/yaml-schema-validator validate -e -f computer.yml -s schemas/schema_computer.yml
 
       - name: Validate Person YAML
         run: |
-          yaml-schema-validator validate -e -f person.yml -s schemas/schema_person.yml
+          $(npm bin)/yaml-schema-validator validate -e -f person.yml -s schemas/schema_person.yml
 
       - name: Validate Schedule YAML
         run: |
-          yaml-schema-validator validate -e -f schedule.yml -s schemas/schema_schedule.yml
+          $(npm bin)/yaml-schema-validator validate -e -f schedule.yml -s schemas/schema_schedule.yml
