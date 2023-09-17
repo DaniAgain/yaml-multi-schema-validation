@@ -1,11 +1,13 @@
 computer:
   cpu:
+    manufacturer: "Intel"
     cores: 8
-    brand: Intel
+    frequency_MHz: 3800
   memory:
-    type: DDR4
-    size_gb: 16
-    MHz: 3200
+    manufacturer: "Corsair"
+    size: 16
+    type: "DDR4"
   disk:
-    type: SSD
-    capacity_gb: 512
+    manufacturer: "Kingston"
+    size: 512
+    type: "SSD"
