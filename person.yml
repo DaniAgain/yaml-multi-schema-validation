@@ -1,3 +1,11 @@
 person:
   name:
     first_name: Stig
+    last_name: Johnsson
+  age: 25
+  class: B
+  start_year: 2022
+  hobbies:
+    - Football
+    - Gaming
+    - Cooking
