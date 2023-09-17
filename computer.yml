@@ -1,3 +1,11 @@
 computer:
   cpu:
     cores: 8
+    brand: Intel
+  memory:
+    type: DDR4
+    size_gb: 16
+    MHz: 3200
+  disk:
+    type: SSD
+    capacity_gb: 512
