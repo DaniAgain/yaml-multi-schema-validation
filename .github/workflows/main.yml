@@ -6,6 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -14,23 +15,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Install yaml-schema-validator
-        run: |
-          npm install -g yaml-schema-validator
+          
+      - run: npm install -g yaml-schema-validator
 
       - name: Validate Car YAML
         run: |
-          $(npm bin)/yaml-schema-validator validate -e -f car.yml -s schemas/schema_car.yml
+          schema validate -e -f car.yml -s schemas/schema_car.yml
 
       - name: Validate Computer YAML
         run: |
-          $(npm bin)/yaml-schema-validator validate -e -f computer.yml -s schemas/schema_computer.yml
+          schema validate -e -f computer.yml -s schemas/schema_computer.yml
 
       - name: Validate Person YAML
         run: |
-          $(npm bin)/yaml-schema-validator validate -e -f person.yml -s schemas/schema_person.yml
-
+          schema validate -e -f person.yml -s schemas/schema_person.yml
       - name: Validate Schedule YAML
         run: |
-          $(npm bin)/yaml-schema-validator validate -e -f schedule.yml -s schemas/schema_schedule.yml
+          schema validate -e -f schedule.yml -s schemas/schema_schedule.yml
