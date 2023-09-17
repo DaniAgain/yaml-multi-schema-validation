@@ -2,7 +2,7 @@ computer:
   cpu:
     manufacturer: "Intel"
     cores: 8
-    frequency_MHz: 3800
+    frequency: 3800
   memory:
     manufacturer: "Corsair"
     size: 16
