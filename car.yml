@@ -1,2 +1,10 @@
 car:
-  manufacturer: volvo
+  manufacturer:
+    name: Volvo
+  model: S90
+  year: 2018
+  reg: AAA123
+  attributes:
+    - Automatic
+    - Sedan
+    - Sport
