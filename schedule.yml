@@ -1,12 +1,8 @@
 schedule:
-  year: 2022
+  year: "2022"
   program: java
   lessons:
     - date: "2022-02-01"
-      startTime: 09:00
-      endTime: 12:00
-      description: IT-Security
+      description: "IT-Security"
     - date: "2022-02-02"
-      startTime: 09:00
-      endTime: 12:00
-      description: DevOps
+      description: "DevOps"
