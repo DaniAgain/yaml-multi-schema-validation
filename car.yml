@@ -1,6 +1,5 @@
 car:
-  manufacturer:
-    name: "Volvo"
+  manufacturer: "Volvo"
   model: "S90"
   year: "2018"
   reg: "AAA123"
